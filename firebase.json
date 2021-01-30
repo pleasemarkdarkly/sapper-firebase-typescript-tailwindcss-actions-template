@@ -1,14 +1,13 @@
 {
-	"hosting": {
-		"public": "__sapper__/export",
-		"rewrites": [
-			{
-				"source": "**",
-				"function": "ssr"
-			}
-		]
-	},
-	"functions": {
-		"source": "."
-	}
+  "hosting": {
+    "public": "static",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "source": "."
+  }
 }
